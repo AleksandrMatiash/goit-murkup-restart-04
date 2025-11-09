@@ -339,13 +339,41 @@ h2.hidden {
   margin-right: 0;
 }
 .portfolio-div {
-  padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  padding: 32px 16px;
 }
 .p-s-f {
   text-align: left;
-  margin-top: 8px;
+}
+.four-s-list {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ffffff;
+  width: 360px;
+  display: flex;
+}
+.portfolio-img-text {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-img-text:hover .overlay {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+.overlay {
+  padding: 40px 32px;
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color, #f4f4fd);
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
 }
 /*футер*/
 
@@ -359,8 +387,6 @@ h2.hidden {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-.p-footer {
   max-width: 264px;
 }
 .foot-svg {
